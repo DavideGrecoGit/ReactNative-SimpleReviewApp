@@ -5,6 +5,7 @@ import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 
 import Home from "./screens/home";
+import Navigator from "./routes/homeStack";
 
 const getFonts = () => {
   return Font.loadAsync({
@@ -35,10 +36,9 @@ export default function App() {
     >
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
-        keyboardVerticalOffset={Platform.OS === "ios" ? -32 : 0}
         style={{ flex: 1 }}
       >
-        <Home />
+        <Navigator />
       </KeyboardAvoidingView>
     </SafeAreaProvider>
   );
