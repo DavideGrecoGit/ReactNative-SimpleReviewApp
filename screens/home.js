@@ -1,11 +1,12 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { SafeAreaView, View, Text } from "react-native";
+import tw from "tailwind-react-native-classnames";
 
 const home = () => {
   return (
-    <View>
-      <Text>Home Screen</Text>
-    </View>
+    <SafeAreaView>
+      <Text style={{ fontFamily: "noto-serif-regular" }}>Home Screen</Text>
+    </SafeAreaView>
   );
 };
 
